@@ -1,0 +1,29 @@
+{
+    "name": "apollo-nexus-prisma-server",
+    "version": "1.0.0",
+    "description": "Server template",
+    "main": "index.ts",
+    "author": "Sam Poate",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "dev": "ts-node-dev --transpile-only --no-notify --exit-child src/index.ts",
+        "generate": "ts-node --transpile-only src/schema.ts"
+    },
+    "dependencies": {
+        "@prisma/client": "^3.10.0",
+        "apollo-server": "^3.6.3",
+        "bcryptjs": "^2.4.3",
+        "graphql": "15.5.1",
+        "graphql-scalars": "^1.15.0",
+        "jsonwebtoken": "^8.5.1",
+        "nexus": "^1.2.0"
+    },
+    "devDependencies": {
+        "@types/bcryptjs": "^2.4.2",
+        "@types/jsonwebtoken": "^8.5.8",
+        "prisma": "^3.10.0",
+        "ts-node-dev": "^1.1.8",
+        "typescript": "^4.6.2"
+    }
+}
